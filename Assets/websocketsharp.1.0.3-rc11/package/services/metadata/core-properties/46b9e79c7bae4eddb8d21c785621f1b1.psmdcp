@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"><dc:creator>sta</dc:creator><dc:description>websocket-sharp provides the WebSocket protocol client and server.
+
+It supports:
+- RFC 6455
+- WebSocket Client and Server
+- Per-message Compression extension
+- Secure Connection
+- HTTP Authentication (Basic/Digest)
+- Query String, Origin header and Cookies
+- Connecting through the HTTP Proxy server
+- .NET 3.5 or later (includes compatible)</dc:description><dc:identifier>WebSocketSharp</dc:identifier><version>1.0.3-rc11</version><keywords>WebSocket</keywords><dc:title>websocket-sharp - WebSocket for standard .NET Framework</dc:title><dc:subject>NuGet Package Explorer</dc:subject></coreProperties>
