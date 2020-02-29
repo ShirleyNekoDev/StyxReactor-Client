@@ -33,7 +33,11 @@ public class GameSystem : MonoBehaviour
                 Debug.Log("Received: " + e.Data);
 
             ws.Connect ();
-            //ws.Send ("WS Connected");
+            ws.Send (
+                @"{
+                ""command"":""echo"",
+                ""payload"":""hello world""
+                }");
             Debug.Log("WS Connected");
         
         }
