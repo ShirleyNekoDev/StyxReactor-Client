@@ -236,6 +236,7 @@ MonoBehaviour:
   FloorPlate: {fileID: 362141722883051806, guid: 3ae230a999a4da7a8b7c4dcfa47ee4f5,
     type: 3}
   Wall: {fileID: 4599987366290473272, guid: 60c72b330a8c472c58b28198b5b7c7ee, type: 3}
+  Stealth: {fileID: 286298708562347277, guid: f953d6e622df44845871a03eacb3bc7e, type: 3}
 --- !u!4 &1560368575
 Transform:
   m_ObjectHideFlags: 0
