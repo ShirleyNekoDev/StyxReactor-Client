@@ -11,7 +11,7 @@ public class GameSystem : MonoBehaviour
     private class Field{
         public String type;
         public String textureId;
-        public bool isStealth;
+        public bool isStealth = false;
     }
 
     private class World {
@@ -47,10 +47,8 @@ public class GameSystem : MonoBehaviour
         // Instantiate at position (0, 0, 0) and zero rotation.
         for(int i = 0 ; i < world.grid.Length ; i++)
         {
-            
             Instantiate(FloorPlate, new Vector3(i % world.width, -0.05f, (float)Math.Floor((double)i / world.width)), Quaternion.identity);
             if(world.grid[i].type == "WALL") Instantiate(Wall, new Vector3(i% world.width, 0.5f, (float)Math.Floor((double)i / world.width)), Quaternion.identity);
-        
         }
         
     }
