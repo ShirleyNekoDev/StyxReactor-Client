@@ -16,6 +16,8 @@ public class GameSystem : MonoBehaviour {
     public GameObject FloorPlate;
     public GameObject Wall;
     public GameObject Stealth;
+    public GameObject Ping;
+
     private WebSocket ws;
 
     void Awake () {
@@ -50,18 +52,19 @@ public class GameSystem : MonoBehaviour {
     void SendPing (Vector3 position) {
         Debug.Log ("send Ping Log");
         int x = (int) position.x;
-        int y = (int) position.y;
+        int z = (int) position.z;
         String message = "Test";
         String blueprint = $@"{{
              ""command"":""ping"",
              ""payload"":
-             ""position"": {x},{y},
+             ""position"": {x},{z},
              ""type"":{message}
              }}";
         //string sending = string.Format(blueprint, x.ToString(), y.ToString(), message);
         Debug.Log("Gotthisfar");
         Debug.Log(blueprint); 
         ws.Send (blueprint);
+        InstantiatePing (new Vector3(x, 0, z));
     }
 
     // Receiving
@@ -112,5 +115,13 @@ public class GameSystem : MonoBehaviour {
                 Quaternion.identity
             );
         }
+    }
+
+    void InstantiatePing (Vector3 position) {
+        Instantiate(
+            Ping,
+            position,
+            Quaternion.identity
+        );
     }
 }

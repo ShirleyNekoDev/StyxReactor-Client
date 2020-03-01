@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -269,6 +269,7 @@ MonoBehaviour:
     type: 3}
   Wall: {fileID: 4599987366290473272, guid: 60c72b330a8c472c58b28198b5b7c7ee, type: 3}
   Stealth: {fileID: 286298708562347277, guid: f953d6e622df44845871a03eacb3bc7e, type: 3}
+  Ping: {fileID: 7312908079782150295, guid: dd5c5fbf9a9e29d44949137b633f8b26, type: 3}
 --- !u!4 &1560368575
 Transform:
   m_ObjectHideFlags: 0
