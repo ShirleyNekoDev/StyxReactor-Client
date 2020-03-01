@@ -16,6 +16,8 @@ public class GameSystem : MonoBehaviour {
         }
     }
 
+    public String Server_Url = "ws://localhost:61737/ws";
+
     public GameObject FloorPlate;
     public GameObject Wall;
     public GameObject Stealth;
@@ -32,8 +34,9 @@ public class GameSystem : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start () {
+        Debug.Log("We will try to connect to: " + Server_Url);
         // todo could not connect warning
-        ws = new WebSocket ("ws://localhost:25566/ws");
+        ws = new WebSocket (Server_Url);
         ws.OnMessage += (sender, e) => {
             Debug.Log ("Received: " + e.Data);
             dynamic msg = JsonConvert.DeserializeObject<Message> (e.Data);
