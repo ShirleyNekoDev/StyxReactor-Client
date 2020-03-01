@@ -64,11 +64,13 @@ public class GameSystem : MonoBehaviour {
     }
 
     void InstantiateField (dynamic field, int x, int y) {
-        Instantiate (
-            FloorPlate,
-            new Vector3 ((float) x, -0.05f, (float) y),
-            Quaternion.identity
-        );
+        if (field.type != "HOLE") {
+            Instantiate (
+                FloorPlate,
+                new Vector3 ((float) x, -0.05f, (float) y),
+                Quaternion.identity
+            );
+        }
         if (field.type == "WALL") {
             Instantiate (
                 Wall,
