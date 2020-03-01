@@ -53,8 +53,8 @@ public class GameSystem : MonoBehaviour {
         int i = 0;
         // Instantiate at position (0, 0, 0) and zero rotation.
         foreach (dynamic field in json.grid) {
-            int x = i % width;
-            int y = (i / width);
+            int x = -width/2 + i % width;
+            int y = height/2 - (i / width);
             Debug.Log ("X: " + x + " Y: " + y);
             UnityThread.executeInUpdate (() => {
                 InstantiateField (field, x, y);
