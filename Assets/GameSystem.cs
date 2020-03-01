@@ -29,9 +29,7 @@ public class GameSystem : MonoBehaviour {
         ws.OnMessage += (sender, e) => {
             Debug.Log ("Received: " + e.Data);
             dynamic msg = JsonConvert.DeserializeObject<Message> (e.Data);
-            if (msg.command == "set_world") {
-                this.InstantiateWorld (msg.payload);
-            }
+            messageHandler (msg);
         };
 
         ws.Connect ();
@@ -47,15 +45,44 @@ public class GameSystem : MonoBehaviour {
 
     }
 
+    // Sending
+
+    void SendPing (Vector3 position) {
+        Debug.Log ("send Ping Log");
+        int x = (int) position.x;
+        int y = (int) position.y;
+        String message = "Test";
+        String blueprint = $@"{{
+             ""command"":""ping"",
+             ""payload"":
+             ""position"": {x},{y},
+             ""type"":{message}
+             }}";
+        //string sending = string.Format(blueprint, x.ToString(), y.ToString(), message);
+        Debug.Log("Gotthisfar");
+        Debug.Log(blueprint); 
+        ws.Send (blueprint);
+    }
+
+    // Receiving
+    void messageHandler (dynamic message) {
+        switch (message.command) {
+            case "set_world":
+                this.InstantiateWorld (message.payload);
+                break;
+            default:
+                break;
+        }
+    }
+
     void InstantiateWorld (dynamic json) {
         int width = json.width;
         int height = json.height;
         int i = 0;
         // Instantiate at position (0, 0, 0) and zero rotation.
         foreach (dynamic field in json.grid) {
-            int x = -width/2 + i % width;
-            int y = height/2 - (i / width);
-            Debug.Log ("X: " + x + " Y: " + y);
+            int x = -width / 2 + i % width;
+            int y = height / 2 - (i / width);
             UnityThread.executeInUpdate (() => {
                 InstantiateField (field, x, y);
             });
