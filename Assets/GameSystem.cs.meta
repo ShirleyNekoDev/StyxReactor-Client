@@ -3,7 +3,13 @@ guid: fc63c55c4657a8e378fa27e1a13875e5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FloorPlate: {fileID: 362141722883051806, guid: 3ae230a999a4da7a8b7c4dcfa47ee4f5,
+      type: 3}
+  - Wall: {fileID: 4599987366290473272, guid: 60c72b330a8c472c58b28198b5b7c7ee, type: 3}
+  - Stealth: {fileID: 286298708562347277, guid: f953d6e622df44845871a03eacb3bc7e,
+      type: 3}
+  - Ping: {fileID: 7312908079782150295, guid: dd5c5fbf9a9e29d44949137b633f8b26, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
