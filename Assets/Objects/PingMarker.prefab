@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7312908079782150297}
   - component: {fileID: 7312908079782150298}
   - component: {fileID: 7312908079782150299}
+  - component: {fileID: 3715158509952908798}
   m_Layer: 0
-  m_Name: Cylinder02
+  m_Name: PingMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7312908079782150295}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15.849483, y: 15.849486, z: 5.3104153}
+  m_LocalScale: {x: 8, y: 8, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -195,3 +196,16 @@ MonoBehaviour:
   MainoffsetY: -1
   UseCustomTex: 0
   CustomTexName: 
+--- !u!114 &3715158509952908798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7312908079782150295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02305946639710948afa708ad5a7d9cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyDelay: 1.5

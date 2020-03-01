@@ -12,7 +12,6 @@ public class GameSystem : MonoBehaviour {
         public dynamic payload;
     }
 
-    // private String sample_world1 = @"{""width"":10,""height"":10,""grid"":[{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""ACCESSIBLE"",""isStealth"":false,""textureId"":""empty""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""},{""type"":""WALL"",""textureId"":""wall""}]}";
     public GameObject FloorPlate;
     public GameObject Wall;
     public GameObject Stealth;
@@ -35,11 +34,6 @@ public class GameSystem : MonoBehaviour {
         };
 
         ws.Connect ();
-        /*  ws.Send (
-             @"{
-             ""command"":""echo"",
-             ""payload"":""hello world""
-              }");        */
     }
 
     // Update is called once per frame
@@ -48,7 +42,6 @@ public class GameSystem : MonoBehaviour {
     }
 
     // Sending
-
     void SendPing (Vector3 position) {
         Debug.Log ("send Ping Log");
         int x = (int) position.x;
@@ -121,7 +114,7 @@ public class GameSystem : MonoBehaviour {
         Instantiate(
             Ping,
             position,
-            Quaternion.identity
+            Quaternion.Euler(-90, 0, 0)
         );
     }
 }
